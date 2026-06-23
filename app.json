@@ -1,4 +1,5 @@
 {
   "name": "ECommerceApp",
-  "displayName": "ECommerceApp"
+  "displayName": "ECommerceApp",
+  "scheme": "ecommerceapp"
 }

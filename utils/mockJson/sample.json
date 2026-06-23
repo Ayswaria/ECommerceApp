@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "description": "Premium noise-cancelling over-ear headphones.",
+    "price": 129.99,
+    "strikePrice": 200,
+    "category": "Electronics",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90",
+      "https://images.unsplash.com/photo-1628116709703-c1c9ad550d36"
+    ],
+    "rating": 4.5,
+    "stock": 23,
+    "tag": "Sale"
+  },
+  {
+    "id": 2,
+    "name": "Boat Headphones",
+    "description": "Premium noise-cancelling over-ear headphones.",
+    "price": 229.99,
+    "strikePrice": 300,
+    "category": "Electronics",
+    "images": [
+      "https://images.unsplash.com/photo-1520170350707-b2da59970118",
+      "https://images.unsplash.com/photo-1505740106531-4243f3831c78"
+    ],
+    "rating": 5,
+    "stock": 20,
+    "tag": "Featured"
+  },
+  {
+    "id": 3,
+    "name": "Sony Headphones Pro",
+    "description": "Premium noise-cancelling over-ear headphones.",
+    "price": 329.99,
+    "strikePrice": 450,
+    "category": "Electronics",
+    "images": [
+      "https://images.unsplash.com/photo-1577174881658-0f30ed549adc",
+      "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb"
+    ],
+    "rating": 4.2,
+    "stock": 20,
+    "tag": "New"
+  }
+]
