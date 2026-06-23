@@ -10,7 +10,6 @@ import { Product } from '../../../models/product';
 import { ProductService } from '../../../services/productService';
 
 const Tab = createBottomTabNavigator();
-const USE_LOCAL_SAMPLE_DATA = true;
 
 export default function ProductTabScreen({ route }: any) {
   const tag = route?.params?.tag;
@@ -26,30 +25,8 @@ export default function ProductTabScreen({ route }: any) {
   const loadProducts = async () => {
     try {
       setError(null);
-
-      if (USE_LOCAL_SAMPLE_DATA) {
-        const localProducts = require('../../../../utils/mockJson/sample_data2_enhanced.json');
-
-        const normalizedProducts: Product[] = (
-          Array.isArray(localProducts) ? localProducts : []
-        ).map((item: any, index: number) => ({
-          id: Number(item?.id) || index + 1,
-          name: String(item?.name ?? 'Unknown Product'),
-          description: String(item?.description ?? ''),
-          price: Number(item?.price ?? 0),
-          strikePrice: Number(item?.strikePrice ?? item?.price ?? 0),
-          category: String(item?.category ?? 'General'),
-          image: String(item?.image ?? 'https://picsum.photos/300/200'),
-          rating: Number(item?.rating ?? 0),
-          stock: Number(item?.stock ?? 0),
-          tag: String(item?.tag ?? 'Featured'),
-        }));
-
-        setProducts(normalizedProducts);
-      } else {
-        const result = await ProductService.getProducts();
-        setProducts(result);
-      }
+      const result = await ProductService.getProducts();
+      setProducts(result);
     } catch (err) {
       console.log(err);
       setError('Unable to load products');

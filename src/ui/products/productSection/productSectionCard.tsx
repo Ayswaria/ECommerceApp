@@ -18,7 +18,7 @@ export default function ProductSectionCard({ product, onPress }: Props) {
       activeOpacity={0.8}
     >
       <View style={styles.imageContainer}>
-        <Image source={{ uri: imageUri }} style={styles.image} />
+        <Image source={{ uri: imageUri, cache: 'reload' }} style={styles.image} />
       </View>
 
       <View style={styles.content}>

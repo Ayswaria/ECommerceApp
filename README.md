@@ -359,7 +359,19 @@ ECommerceApp/
 
 ## 📱 Screens
 
+<p align="center">
+  <img src="screenshots/Home.png" width="22%" alt="Home Screen" />
+  &nbsp;
+  <img src="screenshots/Products.png" width="22%" alt="Products Screen" />
+  &nbsp;
+  <img src="screenshots/Cart.png" width="22%" alt="Cart Screen" />
+  &nbsp;
+  <img src="screenshots/Favourites.png" width="22%" alt="Favourites Screen" />
+</p>
+
 ### Home Screen
+
+<img src="screenshots/Home.png" width="300" alt="Home Screen" />
 
 - Featured product categories
 - Product grid/carousel
@@ -367,19 +379,21 @@ ECommerceApp/
 
 ### Product List Screen
 
-- Filtered products by category/tag
+<img src="screenshots/Products.png" width="300" alt="Products Screen" />
+
 - Search functionality
-- Pull-to-refresh support
 
 ### Product Details Screen
 
-- Image carousel with indicators
+<img src="screenshots/productDetail.png" width="300" alt="Cart Screen" />
+
 - Product information (name, price, description)
 - Add to cart / Quantity controls
 - Favorite button
-- Related products (optional)
 
 ### Cart Screen
+
+<img src="screenshots/Cart.png" width="300" alt="Cart Screen" />
 
 - List of cart items
 - Quantity adjustments
@@ -388,6 +402,8 @@ ECommerceApp/
 - Empty state messaging
 
 ### Favorites Screen
+
+<img src="screenshots/Favourites.png" width="300" alt="Favourites Screen" />
 
 - List of favorited products
 - Quick add to cart from favorites

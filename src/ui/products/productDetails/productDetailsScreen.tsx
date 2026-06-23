@@ -64,6 +64,7 @@ export default function ProductDetailScreen({
 
   const { addToCart, increment, decrement, getQuantity } = cartContext;
   const quantity = getQuantity(product?.id || 0);
+  const imageUri = product.image?.trim() || 'https://picsum.photos/300/200';
 
   return (
     <ScrollView
@@ -74,7 +75,7 @@ export default function ProductDetailScreen({
       <View style={styles.container}>
         {/* IMAGE CAROUSEL */}
         <View style={styles.carouselCard}>
-          <Image source={{ uri: product.image }} style={styles.image} />
+          <Image source={{ uri: imageUri, cache: 'reload' }} style={styles.image} />
         </View>
 
         {/* PRODUCT INFO */}

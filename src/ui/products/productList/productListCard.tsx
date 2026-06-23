@@ -12,7 +12,7 @@ const ProductListCard = ({ product, onPress }: Props) => {
 
   return (
     <TouchableOpacity style={styles.card} onPress={() => onPress(product)}>
-      <Image source={{ uri: imageUri }} style={styles.image} />
+      <Image source={{ uri: imageUri, cache: 'reload' }} style={styles.image} />
 
       <View style={styles.details}>
         <Text style={styles.name} numberOfLines={1}>
